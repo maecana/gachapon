@@ -17,4 +17,52 @@ body {
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background-color: #333;
+}
+
+.box {
+    border-radius: 25%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(236, 125, 51);
+    position: relative;
+    animation-name: anims;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anims {
+    0% {
+        background-color: rgb(238, 169, 104);
+        left: -10rem;
+        top: 0rem;
+        border-radius: 25%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    25% {
+        background-color: rgb(209, 240, 126);
+        /* top: -10rem; */
+    }
+    50% {
+        background-color: rgb(30, 209, 209);
+        /* top: 10rem; */
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+    75% {
+        background-color: rgb(180, 129, 238);
+        /* top: 10rem; */
+    }
+    100% {
+        background-color: rgb(241, 128, 194);
+        left: 10rem;
+        top: 0rem;
+        border-radius: 25%;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
